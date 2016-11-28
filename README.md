@@ -20,6 +20,6 @@
 
         在引用项目处添加
         dependencies {
-        	        compile 'com.github.a243981326:YzsLib:0.0.2'
+        	        compile 'com.github.yaozs:AndroidImageSlider-glide:1.0.0'
         	}
 
