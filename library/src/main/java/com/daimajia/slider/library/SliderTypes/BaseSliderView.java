@@ -241,17 +241,17 @@ public abstract class BaseSliderView {
 //            rq.error(getError());
 //        }
 //
-//        switch (mScaleType) {
-//            case Fit:
-//                rq.fit();
-//                break;
-//            case CenterCrop:
-//                rq.fit().centerCrop();
-//                break;
-//            case CenterInside:
-//                rq.fit().centerInside();
-//                break;
-//        }
+        switch (mScaleType) {
+            case Fit:
+                targetImageView.setScaleType(ImageView.ScaleType.FIT_CENTER);
+                break;
+            case CenterCrop:
+                targetImageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+                break;
+            case CenterInside:
+                targetImageView.setScaleType(ImageView.ScaleType.CENTER_INSIDE);
+                break;
+        }
 ////
         if (mUrl != null) {
             Glide.with(mContext).load(mUrl).listener(new RequestListener<String, GlideDrawable>() {
